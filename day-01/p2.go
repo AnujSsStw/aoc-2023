@@ -12,7 +12,7 @@ var numArr []string = []string{"one", "two", "three", "four", "five", "six", "se
 
 func Part2() {
 	readFile, err := os.Open("/home/ani/personal/aoc-2023/day-01/input.txt")
-	check(err)
+	Check(err)
 	defer readFile.Close()
 
 	fileScanner := bufio.NewScanner(readFile)
